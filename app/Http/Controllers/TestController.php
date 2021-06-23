@@ -14,6 +14,7 @@ class TestController extends Controller
         // $ticket = 'M47xgN2jTjm3dWBidJYtSQ==:z-xEsOgXkGNbMxyWuU39w_3T';
         $path = 'trusted/'.$ticket.'/views/BC47/TDTHKeHoachtheoKhi';//dd($path);
         $src = 'http://171.244.2.102:8851/trusted/'.$ticket.'/views/BC47/TDTHKeHoachtheoKhi?:embed=yes';
+        
         return view('test',['ticket'=>$ticket,'path'=>$path,'src'=>$src]);
     }
 }

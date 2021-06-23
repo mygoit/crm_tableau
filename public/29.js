@@ -30,6 +30,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -65,7 +66,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
                 if (response && response != -1) {
                   _this.ticket = response;
-                  _this.url_view = 'http://171.244.2.102:8851/trusted/' + response + '/views/TiendodoanhthuBC/Chitittindoanhthu?iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no&:origin=viz_share_link';
+                  _this.url_view = 'http://171.244.2.102:8851/views/TiendodoanhthuBC/DBTindoanhthu.png';
                   _this.path = 'trusted/' + response + '/t/1/views/test123/Sheet1';
                 }
 
@@ -100,26 +101,15 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("b-card", [
-    _vm.ticket != "" && _vm.ticket != -1
-      ? _c(
-          "object",
-          {
-            staticClass: "tableauViz",
-            staticStyle: { display: "none" },
-            attrs: { width: "100%", height: "600" }
-          },
-          [
-            _c("param", {
-              attrs: {
-                name: "name",
-                value: "TiendodoanhthuTCT/Chitittindoanhthu"
-              }
-            }),
-            _vm._v(" "),
-            _c("param", { attrs: { name: "ticket", value: _vm.ticket } })
-          ]
-        )
-      : _vm._e()
+    _c("object", {
+      attrs: {
+        type: "application/pdf",
+        data:
+          "http://171.244.2.102:8851/views/TiendodoanhthuBC/DBTindoanhthu.pdf",
+        width: "100%",
+        height: "100%"
+      }
+    })
   ])
 }
 var staticRenderFns = []

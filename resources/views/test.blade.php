@@ -40,21 +40,23 @@
                     </div>
                 </div>
             </noscript>
-
-            @if(false)
-            <object class="tableauViz" width="100%" height="600" style="display:none;">
-                <param name="host_url" value="http://171.244.2.102:8851/">
-                <!-- <param name="site_root" value=""> -->
-                <param name="name" value="TiendodoanhthuBC/DBTindoanhthu" />
-                <param name="ticket" value="{{$ticket}}" />
-            </object>
             <script type='text/javascript' src='http://171.244.2.102:8851/javascripts/api/viz_v1.js'></script>
+            @if(false)
+
             <object class="tableauViz" width="100%" height="700" style="display:none;">
                  <param name="path" value="{{$path}}" />
             </object>
-            @endif
-
             <iframe src="{{$src}}" width="800" height="600"></iframe>
+            <object class="tableauViz" width="100%" height="600" style="display:none;">
+                <param name="name" value="TiendodoanhthuBC/DBTindoanhthu" />
+                <param name="ticket" value="{{$ticket}}" />
+            </object>
+
+            @endif
+            <object class="tableauViz" width="100%" height="700" style="display:none;">
+                <param name="path" value="trusted/{{$ticket}}/views/TiendodoanhthuBC/DBTindoanhthu" />
+            </object>
+
         </div>
         <script type="text/javascript">
         </script>

@@ -1,10 +1,11 @@
 <template>
     <b-card>
+        <object type="application/pdf" data="http://171.244.2.102:8851/views/TiendodoanhthuBC/DBTindoanhthu.pdf" width="100%" height="100%"></object>
         <!-- <b-button type="button" @click.prevent="getTicket()">Click me</b-button> -->
-        <object class="tableauViz" width="100%" height="600" style="display:none;" v-if="ticket!=''&&ticket!=-1">
+        <!-- <object class="tableauViz" width="100%" height="600" style="display:none;" v-if="ticket!=''&&ticket!=-1">
             <param name="name" value="TiendodoanhthuTCT/Chitittindoanhthu" />
             <param name="ticket" :value="ticket" />
-        </object>
+        </object> -->
         <!-- <object class="tableauViz" width="100%" height="700" style="display:none;">
             <param name="path" :value="path" />
         </object> -->
@@ -35,7 +36,7 @@ export default {
             const response = await Repository.post('/api/ticket',params)
             if(response && response!=-1){
                 this.ticket = response
-                this.url_view = 'http://171.244.2.102:8851/trusted/'+response+'/views/TiendodoanhthuBC/Chitittindoanhthu?iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no&:origin=viz_share_link'
+                this.url_view = 'http://171.244.2.102:8851/views/TiendodoanhthuBC/DBTindoanhthu.png'
                 this.path = 'trusted/'+response+'/t/1/views/test123/Sheet1'
             }
             console.log(response);
