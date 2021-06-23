@@ -1,0 +1,40 @@
+// Body
+$body-bg: #f8fafc;
+$grid-gutter-width: 20px !default;;
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #FFA733;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+// custom
+$gre2 : #20385A !default;
+$done : #00D09E !default;
+$wait : #182276 !default;
+$puting : #3FB2E8 !default;
+$cancel : #BE0909 !default;
+$vargre2 : $gre2 !default;
+$orange2 : #F95E1B !default;
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    'submit': $vargre2,
+    'done' : $done,
+    'wait' : $wait,
+    'puting' : $puting,
+    'cancel' : $cancel,
+    'yellow' : $yellow,
+    'orange-2' : $orange2
+  ),
+  $theme-colors
+);

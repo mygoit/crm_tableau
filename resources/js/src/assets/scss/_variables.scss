@@ -1,0 +1,12 @@
+// Variable overrides
+$sidebar-width : 256px !default;
+$sidebar-bg : #3c4b64 !default;
+
+$submit : #1E6C9A !default;
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    'submit': $submit,
+  ),
+  $theme-colors
+);
