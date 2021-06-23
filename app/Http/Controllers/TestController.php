@@ -8,7 +8,7 @@ class TestController extends Controller
 {
     public function index(){
 
-        $client_ip = '27.72.105.188';
+        $client_ip = env('CLIENT_IP','27.72.105.188');
         $target_site = '';
         $ticket = get_ticket($client_ip,$target_site);
         // $ticket = 'M47xgN2jTjm3dWBidJYtSQ==:z-xEsOgXkGNbMxyWuU39w_3T';

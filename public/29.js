@@ -54,7 +54,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context.prev = _context.next) {
               case 0:
                 params = {
-                  client_ip: '27.72.105.188',
+                  client_ip: '',
                   target_site: ''
                 };
                 _context.next = 3;

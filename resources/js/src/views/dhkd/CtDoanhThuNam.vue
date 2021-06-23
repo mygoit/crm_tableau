@@ -29,7 +29,7 @@ export default {
     methods: {
         async getTicket() {
             let params = {
-                client_ip: '27.72.105.188',
+                client_ip: '',
                 target_site: ''
             }
             const response = await Repository.post('/api/ticket',params)

@@ -5,7 +5,7 @@ if(!function_exists('get_ticket')){
         $response = -1;
         $params = [
             'username' => env('TABLEAU_USERNAME'),
-            'client_ip' => $client_ip,
+            'client_ip' => $client_ip??env('CLIENT_IP','27.72.105.188'),
             'target_site' => $target_site
         ];
         try {
